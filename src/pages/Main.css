@@ -1,0 +1,41 @@
+/* Main.css */
+.main-container {
+    background-color: #f2f5f8;
+    /* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio h1 {
+    color: #007BFF;
+    /* Blue header color */
+}
+
+.skills ul,
+.education,
+.experience {
+    background-color: #fff;
+    /* White background color */
+    border: 1px solid #e0e0e0;
+    /* Light border */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.skills li {
+    color: #007BFF;
+    /* Blue list item color */
+}
+
+.education,
+.experience {
+    color: #333;
+    /* Dark text color */
+}
+
+span {
+    color: #007BFF;
+    /* Blue span color for institutions */
+}

@@ -1,0 +1,29 @@
+.top-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.top-nav ul li {
+  margin-right: 20px;
+}
+
+.top-nav a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+

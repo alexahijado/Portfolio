@@ -1,0 +1,33 @@
+/* Portfolio.css */
+.project {
+    background-color: #fff; /* White background color */
+    border: 1px solid #e0e0e0; /* Light border */
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%; /* Make .project as wide as the screen */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within the container */
+}
+
+.project img {
+    max-width: 30%; /* Set the maximum width of the image to 30% of its container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+h1 {
+    color: #007BFF; /* Blue header color */
+}
+
+a {
+    color: #007BFF; /* Blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add more CSS rules to adapt the design to your preferences */
