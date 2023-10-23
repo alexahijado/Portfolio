@@ -27,6 +27,12 @@ function Portfolio() {
             imageUrl: '/project4.png',
             projectUrl: 'https://alexahijado.github.io/Simple-TODO-List/',
         },
+        {
+            title: 'Weather App',
+            description: `Responsive weather app made on React, scalable to multiple screen sizes and fast to respond.`,
+            imageUrl: '/project5.png',
+            projectUrl: 'https://fast-weather-app.netlify.app/',
+        },
         
     ];
 
