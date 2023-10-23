@@ -19,7 +19,7 @@ function Portfolio() {
             title: 'Spotify Clone',
             description: `I wanted to practice the backend using Express.JS and Node.JS, so I developed a Spotify clone using Spotify's developer's API.`,
             imageUrl: '/project3.png',
-            projectUrl: 'https://github.com/alexahijado/Spotify-Clone',
+            projectUrl: 'https://spotifyclone.adaptable.app/',
         },
         {
             title: 'Simple TODO List (HTML and JS)',
