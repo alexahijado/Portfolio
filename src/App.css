@@ -1,3 +1,9 @@
+:root {
+  --text-color-light: #000;
+  --text-color-dark: #fff;
+  --link-color: #007BFF;
+}
+
 .top-nav {
   position: absolute;
   top: 20px;
@@ -6,6 +12,7 @@
   z-index: 2;
   display: flex;
   justify-content: flex-end;
+  color: var(--text-color-light);
 }
 
 .top-nav ul {
@@ -19,7 +26,7 @@
 }
 
 .top-nav a {
-  color: #007BFF;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -27,3 +34,13 @@
   text-decoration: underline;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-light: #fff;
+    --link-color: #007BFF;
+  }
+
+  .top-nav {
+    color: var(--text-color-dark);
+  }
+}

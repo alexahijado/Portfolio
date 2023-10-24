@@ -33,6 +33,12 @@ function Portfolio() {
             imageUrl: '/project5.png',
             projectUrl: 'https://fast-weather-app.netlify.app/',
         },
+        {
+            title: 'Interactive Quiz App',
+            description: `I always liked quiz apps, such as Trivia, so here's my take on it.`,
+            imageUrl: '/project6.png',
+            projectUrl: 'https://alexahijado.github.io/Quiz-game/',
+        },
         
     ];
 

@@ -1,41 +1,71 @@
-/* Main.css */
+:root {
+    --background-color-light: #f2f5f8;
+    --background-color-dark: #333;
+    --border-color-light: #e0e0e0;
+    --border-color-dark: #666;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --list-item-color: #007BFF;
+    --span-color: #007BFF;
+}
+
 .main-container {
-    background-color: #f2f5f8;
-    /* Light background color */
+    background-color: var(--background-color-light);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color-light);
 }
 
 .bio h1 {
-    color: #007BFF;
-    /* Blue header color */
+    color: var(--link-color);
 }
 
 .skills ul,
 .education,
 .experience {
-    background-color: #fff;
-    /* White background color */
-    border: 1px solid #e0e0e0;
-    /* Light border */
+    background-color: var(--background-color-light);
+    border: 1px solid var(--border-color-light);
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+    color: var(--text-color-light);
 }
 
 .skills li {
-    color: #007BFF;
-    /* Blue list item color */
+    color: var(--list-item-color);
 }
 
 .education,
 .experience {
-    color: #333;
-    /* Dark text color */
+    color: var(--text-color-light);
 }
 
 span {
-    color: #007BFF;
-    /* Blue span color for institutions */
+    color: var(--span-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color-light: #333;
+        --background-color-dark: #111;
+        --border-color-light: #666;
+        --border-color-dark: #444;
+        --text-color-light: #fff;
+        --list-item-color: #007BFF;
+        --span-color: #007BFF;
+    }
+
+    .main-container {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+
+    .skills ul,
+    .education,
+    .experience {
+        background-color: var(--background-color-dark);
+        border: 1px solid var(--border-color-dark);
+        color: var(--text-color-dark);
+    }
 }

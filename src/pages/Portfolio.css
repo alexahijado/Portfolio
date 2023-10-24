@@ -1,28 +1,38 @@
-/* Portfolio.css */
+:root {
+    --background-color-light: #fff;
+    --background-color-dark: #333;
+    --border-color-light: #e0e0e0;
+    --border-color-dark: #666;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --link-color: #007BFF;
+}
+
 .project {
-    background-color: #fff; /* White background color */
-    border: 1px solid #e0e0e0; /* Light border */
+    background-color: var(--background-color-light);
+    border: 1px solid var(--border-color-light);
     padding: 20px;
     border-radius: 5px;
-    width: 100%; /* Make .project as wide as the screen */
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    text-align: center; /* Center text within the container */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color-light);
 }
 
 .project img {
-    max-width: 30%; /* Set the maximum width of the image to 30% of its container */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 30%;
+    height: auto;
 }
 
 h1 {
-    color: #007BFF; /* Blue header color */
+    color: var(--link-color);
 }
 
 a {
-    color: #007BFF; /* Blue link color */
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -30,4 +40,19 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Add more CSS rules to adapt the design to your preferences */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color-light: #333;
+        --background-color-dark: #111;
+        --border-color-light: #666;
+        --border-color-dark: #444;
+        --text-color-light: #fff;
+        --text-color-dark: #fff;
+    }
+
+    .project {
+        background-color: var(--background-color-dark);
+        border: 1px solid var(--border-color-dark);
+        color: var(--text-color-dark);
+    }
+}

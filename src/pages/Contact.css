@@ -1,15 +1,24 @@
-/* Contact.css */
+:root {
+    --background-color-light: #f2f5f8;
+    --background-color-dark: #333;
+    --border-color-light: #e0e0e0;
+    --border-color-dark: #666;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --header-color: #007BFF;
+    --link-color: #007BFF;
+}
+
 .contact-container {
-    background-color: #f2f5f8;
-    /* Light background color */
+    background-color: var(--background-color-light);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color-light);
 }
 
 h1 {
-    color: #007BFF;
-    /* Blue header color */
+    color: var(--header-color);
 }
 
 .contact-methods {
@@ -20,24 +29,20 @@ h1 {
 }
 
 .contact-method {
-    background-color: #fff;
-    /* White background color */
-    border: 1px solid #e0e0e0;
-    /* Light border */
+    background-color: var(--background-color-light);
+    border: 1px solid var(--border-color-light);
     padding: 20px;
     border-radius: 5px;
     width: calc(33.33% - 20px);
-    /* Adjust to your desired width */
+    color: var(--text-color-light);
 }
 
 h2 {
-    color: #007BFF;
-    /* Blue section title color */
+    color: var(--header-color);
 }
 
 a {
-    color: #007BFF;
-    /* Blue link color */
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -45,4 +50,25 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Add more CSS rules to adapt the design to your preferences */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color-light: #333;
+        --background-color-dark: #111;
+        --border-color-light: #666;
+        --border-color-dark: #444;
+        --text-color-light: #fff;
+        --header-color: #007BFF;
+        --link-color: #007BFF;
+    }
+
+    .contact-container {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+
+    .contact-method {
+        background-color: var(--background-color-dark);
+        border: 1px solid var(--border-color-dark);
+        color: var(--text-color-dark);
+    }
+}
