@@ -39,6 +39,12 @@ function Portfolio() {
             imageUrl: '/project6.png',
             projectUrl: 'https://alexahijado.github.io/Quiz-game/',
         },
+        {
+            title: 'Simple Note-taking app (ReactJS)',
+            description: `I made a note taking app in React with browser session storage, so that the notes are always available, no matter if you close or restart the browser. Also, the notes have full CRUD functionality.`,
+            imageUrl: '/project7.png',
+            projectUrl: 'https://simple-note-taking-site.netlify.app/',
+        },
         
     ];
 
